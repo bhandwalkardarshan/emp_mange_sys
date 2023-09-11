@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="../css/employee.css">
+</head>
+<body>
+    <h2>Employee Page</h2>
+    <div>
+        <label for="sort-select">Sort by Salary:</label>
+        <select id="sort-select">
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+        <label for="department-select">Filter by Department:</label>
+        <select id="department-select">
+            <option value="engineering">Engineering</option>
+            <option value="operations">Operations</option>
+            <option value="marketing">Marketing</option>
+            <option value="finance">Finance</option>
+            <option value="hr">HR</option>
+        </select>
+        <label for="gender-select">Filter by Gender:</label>
+        <select id="gender-select">
+            <option value="all">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div id="card-container"></div>
+    <div id="pagination">
+        <button id="prev-page">Prev</button>
+        <button id="next-page">Next</button>
+    </div>
+</body>
+</html>
+<script src="../scripts/employee.js"></script>
